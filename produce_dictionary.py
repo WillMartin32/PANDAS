@@ -48,10 +48,8 @@ print(produce.T)
 
 print("----------Produce that had the highest and lowest sales in total sales (both name of produce and value)?----------",'\n')
 
-#print(produce.T.sort_values(by='Total Sale', ascending=False))
-print('\n', "The max amount of sales was", produce.loc['Total Sale'].max(),"from Cherries", '\n')
-print('\n', "The max amount of sales was", produce.loc['Total Sale'].idxmax(),"from Cherries", '\n')
-print(" The min amount of sales was", produce.loc['Total Sale'].min(), "from Watermelon",'\n')
+print("The max amount of sales was", produce.loc['Total Sale'].idxmax(), "with", produce.loc['Total Sale'].max(), '\n')
+print("The min amount of sales was", produce.loc['Total Sale'].idxmin(), "with", produce.loc['Total Sale'].min(),'\n')
 
 print("----------Using 'loc', display the quantity and total sales for 'Orange' and 'Beets' (together)?----------",'\n')
 
